@@ -232,10 +232,12 @@ public class GameEngine {
 				StdDraw.picture(1500, 100, "Exit Game Button.png", 190, 130);
 				StdDraw.show(1);
 				if (StdDraw.mousePressed() == true && StdDraw.mouseX()<1290 && StdDraw.mouseX()>290 && StdDraw.mouseY()<465 && StdDraw.mouseY()> -5){
+					StdDraw.mousePressed = false;
 					run = 1;
 					playGame();
 				}
 				if (StdDraw.mousePressed() == true && StdDraw.mouseX()<1595 && StdDraw.mouseX()>1405 && StdDraw.mouseY()<165 && StdDraw.mouseY()> -35){
+					StdDraw.mousePressed = false;
 					System.exit(0);
 				}
 			}

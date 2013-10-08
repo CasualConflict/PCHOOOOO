@@ -23,6 +23,7 @@ public class InstructionsMenu {
 	}
 	public static int clickCheck(){
 		if (StdDraw.mousePressed() == true && StdDraw.mouseX()<1651 && StdDraw.mouseX()>1449 && StdDraw.mouseY()>-25 && StdDraw.mouseY()< 125){
+			StdDraw.mousePressed = false;
 			return 3;
 		}
 		return 2;
